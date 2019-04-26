@@ -14,14 +14,14 @@ class Store {
                 if(this.KingSizebed[i].price<this.customer.budget){
                     console.log(this.customer.name+' you can buy a '+this.KingSizebed[i].animal);
                 } else {
-                    if(this.customer.budget === 0) {
+                    if(this.customer.budget <= 0) {
                         this.kickCustomerOut();
-                    }
+                    } else {
                     console.log( this.customer.name + ' can\'t afford ' + this.KingSizebed[i].animal);
+                    }
                 }
             }
         }
-        // console.log('this.dog :', this.dog, "pet: ", pet);
     }
 
     displayAnimals(){
@@ -47,7 +47,7 @@ class Store {
     }
 
     kickCustomerOut(){
-        console.log('Get out! ')
+        console.log('U got No money! Get out!!!')
         //kick poor ppl out of store
         //check customer's avaibble budget
     }
@@ -56,11 +56,5 @@ class Store {
         //get new pet from outside
         //catch wild free pets for more profit
     }
-
-
-    
-
-    
-
 
 }
