@@ -6,13 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <title>Document</title>
-   
     <script src="human.js"></script>
     <script src="store.js"></script>
     <script src="pet.js"></script>
     <script src="main.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background-color: blanchedalmond;
+            width: 100vw;
+            height: 100vh;
+        }
+        .main {
+            justify-content: center;
+        }
+        .title{
+            text-align: center;
+        }
+        .store {
+            background-color: lightblue;
+            height: 100%;
+            width: 40%;
+            margin-left: 2%;
+            min-height: 600px;
+        }
+        .pets {
+            background-color: lightgrey;
+            /* width: 45%; */
+            height: 60%;
+        }
+        .customer {
+            background-color: lightyellow;
+            height: 100%;
+            width: 40%;
+            margin-left: 2%;
+            min-height: 600px;
+        }
+        .petshop {
+            text-align: center;
+        }
+        .customertitle {
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <header class='row'>
+        <h3 class='title'>OOP Pet Store</h3>
+    </header>
+    <div class='main row'>
+    <div class="store col-xs-5">
+        <h3 class="petshop">Pet Store</h3>
+        <div class="pets">
+            <table class='table'>
+            <thead>
+                <th>Pet</th>
+                <th>Price</th>
+                <th>Condition</th>
+            </thead>
+            <tbody class='cage'>
+
+            </tbody> 
+            </table>
+        </div>
+    </div>
+
+    <div class="customer col-xs-5 ">
+        <h3 class="customertitle">Customers</h3>
+            <!-- <button class="work">work</button>
+            <button class="roulette">roulette</button> -->
+        <label for="register">Customer register<input type="text" width="20" class="name nameinput">
+        <button class="submit">submit</button>
+        </label>
+        <p><input type="text" class="name nameoutput"> have <input type="text" class="money"> dollars.</p>
+    </div>
+    </div>
 </body>
 </html>
